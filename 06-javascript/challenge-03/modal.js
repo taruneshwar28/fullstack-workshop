@@ -13,7 +13,6 @@ function createModal(title, content, buttons) {
     <p>${content}</p>
     <div class="footer"></div>
   `;
-
   const footer = modal.querySelector(".footer");
 
   buttons.forEach(b => {
