@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Modal</title>
+  <style>
+    body.noscroll { overflow: hidden; }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.3s;
+    }
+
+    .overlay.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal {
+      background: white;
+      padding: 15px;
+      width: 300px;
+      border-radius: 5px;
+      transform: scale(0.8);
+      transition: 0.3s;
+    }
+
+    .overlay.show .modal {
+      transform: scale(1);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .close {
+      cursor: pointer;
+    }
+
+    .footer {
+      margin-top: 10px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+<button onclick="openModal()">Open Modal</button>
+
+<script src="./modal.js"></script>
+
+</body>
+</html>

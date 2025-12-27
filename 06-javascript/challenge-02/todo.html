@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Categorized Todo</title>
+</head>
+<body>
+    <h2>Todo List</h2>
+<input type="text" id="taskText" placeholder="Add task">
+<select id="taskCategory">
+  <option value="Work">Work</option>
+  <option value="Personal">Personal</option>
+</select>
+<button onclick="addTask()">Add</button>
+
+<hr>
+
+<button onclick="setFilter('All')">All</button>
+<button onclick="setFilter('Work')">Work</button>
+<button onclick="setFilter('Personal')">Personal</button>
+
+<p id="count"></p>
+<ul id="taskList"></ul>
+
+    <script src="./todo.js"></script>
+</body>
+</html>
+
