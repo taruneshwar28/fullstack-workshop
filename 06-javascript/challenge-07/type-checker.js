@@ -17,5 +17,6 @@ const typeOf = (value) => {
     case "[object Error]": return "error";
     case "[object Promise]": return "promise";
     default: return "object";
+      
   }
 };
