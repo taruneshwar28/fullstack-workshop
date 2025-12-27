@@ -61,7 +61,6 @@ function mySome(arr, callback) {
 
 function myFlat(arr, depth = 1) {
   const result = [];
-
   function flatten(array, d) {
     for (let i = 0; i < array.length; i++) {
       const value = array[i];
