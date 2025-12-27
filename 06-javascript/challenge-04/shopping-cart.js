@@ -12,11 +12,9 @@ function createShoppingCart() {
         items.push({ ...item });
       }
     },
-
     getItems() {
       return items;
     },
-
     updateQuantity(id, quantity) {
       const item = items.find(i => i.id === id);
       if (item) {
