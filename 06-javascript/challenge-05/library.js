@@ -21,7 +21,6 @@ class Library {
     const borrowed = this.transactions.filter(
       t => t.isbn === isbn && !t.returnedAt
     ).length;
-
     return book.copies - borrowed;
   }
 
