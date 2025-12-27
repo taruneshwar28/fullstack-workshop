@@ -1,10 +1,8 @@
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let filter = "All";
-
 function save() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
-
 function addTask() {
   let text = taskText.value.trim();
   let category = taskCategory.value;
