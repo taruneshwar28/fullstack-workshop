@@ -23,7 +23,6 @@ function validatePassword(password) {
             sp++;
         }
     }
-
     if(up==0){
         error.push('Need at least one uppercase');
         suggestions.push('Add uppercases');
