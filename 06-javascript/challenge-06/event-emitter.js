@@ -1,6 +1,5 @@
 function createEventEmitter() {
   const events = {};
-
   return {
     on(event, callback) {
       if (!events[event]) {
