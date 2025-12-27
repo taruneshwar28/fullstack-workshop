@@ -30,6 +30,7 @@ function createEventEmitter() {
 
     off(event, callback) {
       if (!events[event]) return;
+      
       if (!callback) {
         delete events[event];
       } else {
