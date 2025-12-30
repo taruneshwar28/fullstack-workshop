@@ -1,7 +1,13 @@
-let x=5;
-let y=10;
-x=x+y;
-y=x-y;
-x=x-y;
-console.log(x);
-console.log(y);
+const swapNumbers = (a, b) => {
+    [a, b] = [a, b].reduce(
+        ([x, y]) => [y, x]
+    );
+
+    console.log(`x = ${a}`);
+    console.log(`y = ${b}`);
+};
+
+let x = 5;
+let y = 10;
+
+swapNumbers(x, y);
