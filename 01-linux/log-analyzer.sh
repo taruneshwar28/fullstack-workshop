@@ -1,8 +1,11 @@
+#!/bin/bash
+set -e
 LOG_FILE="/c/Users/Tarun/Desktop/revature/sample-log.txt"
 echo "===================LOG ANALYSIS REPORT================="
 echo "File: $LOG_FILE"
 if [ ! -e $LOG_FILE ]; then
-        echo "Error : Log file not found";
+        echo "Error : Log file not found"
+        exit 1
 else
         count=0
         while read line; do
