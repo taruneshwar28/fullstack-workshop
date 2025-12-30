@@ -1,7 +1,7 @@
 # Review: 06-javascript
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-30 11:50
+**Review Date:** 2025-12-30 15:24
 
 ---
 
@@ -13,15 +13,15 @@
 
 📄 **basic-quiz.js**
    Path: `06-javascript/basic-quiz.js`
-   Lines: 13
+   Lines: 28
 
     - ✅ Uses `const`/`let` (no `var`)
-    - ❌ Uses loose equality (`==`) 3 times
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
-    - 💡 Consider using array methods (map, filter, reduce)
+    - ✅ Uses strict equality (`===`)
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
+    - ✅ Uses modern array methods
 
-   **Score: 1/5**
+   **Score: 5/5**
 
 📄 **bmi-calculator.js**
    Path: `06-javascript/bmi-calculator.js`
@@ -48,15 +48,15 @@
 
 📄 **counter.js**
    Path: `06-javascript/challenge-01/counter.js`
-   Lines: 56
+   Lines: 33
 
     - ✅ Uses `const`/`let` (no `var`)
-    - ❌ Uses loose equality (`==`) 1 times
+    - ✅ Uses strict equality (`===`)
     - ✅ Uses arrow functions
-    - 💡 Consider using template literals for string interpolation
-    - 💡 Consider using array methods (map, filter, reduce)
+    - ✅ Uses template literals
+    - ✅ Uses modern array methods
 
-   **Score: 2/5**
+   **Score: 5/5**
 
 📄 **todo.html**
    Path: `06-javascript/challenge-02/todo.html`
@@ -83,14 +83,14 @@
 
 📄 **modal.html**
    Path: `06-javascript/challenge-03/modal.html`
-   Lines: 59
+   Lines: 61
 
     - ✅ Has `<!DOCTYPE html>`
     - 💡 Consider using semantic tags (header, nav, main, etc.)
-    - ❌ Missing viewport meta tag
-    - 💡 Add `lang` attribute to `<html>` tag
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
 
-   **Score: 2/5**
+   **Score: 4/5**
 
 📄 **modal.js**
    Path: `06-javascript/challenge-03/modal.js`
@@ -154,27 +154,27 @@
 
 📄 **validate-password.js**
    Path: `06-javascript/challenge-08/validate-password.js`
-   Lines: 52
-
-    - ✅ Uses `const`/`let` (no `var`)
-    - ❌ Uses loose equality (`==`) 7 times
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
-    - 💡 Consider using array methods (map, filter, reduce)
-
-   **Score: 1/5**
-
-📄 **array-methods.js**
-   Path: `06-javascript/challenge-09/array-methods.js`
-   Lines: 78
+   Lines: 59
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
+    - ✅ Uses modern array methods
+
+   **Score: 5/5**
+
+📄 **array-methods.js**
+   Path: `06-javascript/challenge-09/array-methods.js`
+   Lines: 79
+
+    - ✅ Uses `const`/`let` (no `var`)
+    - ✅ Uses strict equality (`===`)
+    - ✅ Uses arrow functions
     - 💡 Consider using template literals for string interpolation
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 2/5**
+   **Score: 3/5**
 
 📄 **mad-libs.js**
    Path: `06-javascript/mad-libs.js`
@@ -190,39 +190,39 @@
 
 📄 **number-pyramid.js**
    Path: `06-javascript/number-pyramid.js`
-   Lines: 16
+   Lines: 22
 
     - ✅ Uses `const`/`let` (no `var`)
-    - ❌ Uses loose equality (`==`) 1 times
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
-    - 💡 Consider using array methods (map, filter, reduce)
+    - ✅ Uses strict equality (`===`)
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
+    - ✅ Uses modern array methods
 
-   **Score: 1/5**
+   **Score: 5/5**
 
 📄 **prime-numbers.js**
    Path: `06-javascript/prime-numbers.js`
-   Lines: 16
+   Lines: 15
 
     - ✅ Uses `const`/`let` (no `var`)
-    - ❌ Uses loose equality (`==`) 2 times
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
-    - 💡 Consider using array methods (map, filter, reduce)
+    - ✅ Uses strict equality (`===`)
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
+    - ✅ Uses modern array methods
 
-   **Score: 1/5**
+   **Score: 5/5**
 
 📄 **temperature-converter.js**
    Path: `06-javascript/temperature-converter.js`
-   Lines: 10
+   Lines: 29
 
     - ✅ Uses `const`/`let` (no `var`)
-    - ❌ Uses loose equality (`==`) 2 times
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
+    - ✅ Uses strict equality (`===`)
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 1/5**
+   **Score: 4/5**
 
 📄 **type-checker.js**
    Path: `06-javascript/type-checker.js`
@@ -238,17 +238,17 @@
 
 📄 **variable-swap.js**
    Path: `06-javascript/variable-swap.js`
-   Lines: 6
+   Lines: 13
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
-    - 💡 Consider using array methods (map, filter, reduce)
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
+    - ✅ Uses modern array methods
 
-   **Score: 2/5**
+   **Score: 5/5**
 
-### Topic Score: 54 / 100 (54%)
+### Topic Score: 82 / 100 (82%)
 
 ---
 
