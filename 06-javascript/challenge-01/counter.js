@@ -1,57 +1,33 @@
-let btn1=document.getElementById("btn1");
-let btn2=document.getElementById("btn2");
-let reset=document.getElementById("reset");
-let h1=document.querySelector("h1")
-let btn3=document.getElementById("btn3");
-let btn4=document.getElementById("btn4");
-let btn5=document.getElementById("btn5");
+const buttons = [
+    { id: "btn1", value: -1 },
+    { id: "btn2", value: 1 },
+    { id: "btn3", value: 1 },
+    { id: "btn4", value: 5 },
+    { id: "btn5", value: 10 }
+];
 
+const resetBtn = document.getElementById("reset");
+const h1 = document.querySelector("h1");
 
-let count=0;
+let count = 0;
 
-btn1.addEventListener("click",()=>{
-    count=count-1
-    if(count<0){
-        count=0;
-    }
-    if(count>0){
-    h1.innerText=count;
-    h1.style.color="green";
-    }
-    if(count==0){
-        h1.innerText=count;
-        h1.style.color="black"
-    }
-})
-btn2.addEventListener("click",()=>{
-    count=count+1;
-    if(count>0){
-    h1.innerText=count;
-    h1.style.color="green";
-    }
-})
-reset.addEventListener("click",()=>{
-    count=0;
-    h1.innerText=count;
-})
-btn3.addEventListener("click",()=>{
-    count=count+1;
-        if(count>0){
-    h1.innerText=count;
-    h1.style.color="green";
-    }
-})
-btn4.addEventListener("click",()=>{
-    count=count+5;
-        if(count>0){
-    h1.innerText=count;
-    h1.style.color="green";
-    }
-})
-btn5.addEventListener("click",()=>{
-    count=count+10;
-        if(count>0){
-    h1.innerText=count;
-    h1.style.color="green";
-    }
-})
+// reusable function (arrow function)
+const updateUI = () => {
+    h1.innerText = `${count}`; // template literal used
+    h1.style.color = count > 0 ? "green" : "black";
+};
+
+// array method used (map)
+buttons.map(btn => {
+    const button = document.getElementById(btn.id);
+    button.addEventListener("click", () => {
+        count += btn.value;
+        if (count < 0) count = 0;
+        updateUI();
+    });
+});
+
+resetBtn.addEventListener("click", () => {
+    count = 0;
+    updateUI();
+});
