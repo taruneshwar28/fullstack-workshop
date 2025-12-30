@@ -1,17 +1,15 @@
-function findPrimes(limit) {
-    let arr=[];
-    for(let i=2;i<=limit;i++){
-        let c=0;
-        for(let j=1;j<=i;j++){
-            if(i%j==0){
-                c++;
-            }
-        }
-        if(c==2){
-            arr.push(i);
-        }
-    }
-    return arr
-}
+const findPrimes = (limit) => {
+    const numbers = Array.from({ length: limit - 1 }, (_, i) => i + 2);
 
-console.log(findPrimes(30));
+    const isPrime = (num) => {
+        if (num < 2) return false;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) return false;
+        }
+        return true;
+    };
+
+    return numbers.filter(isPrime);
+};
+
+console.log(`Prime numbers up to 30: ${findPrimes(30)}`);
