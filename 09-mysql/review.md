@@ -1,13 +1,13 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2026-01-02 16:45
+**Review Date:** 2026-01-03 16:08
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 10
+**Files submitted:** 9
 
 ### Relevance Check
 
@@ -27,7 +27,7 @@ Please complete the correct exercise and resubmit.
 
 ## Challenge
 
-**Status:** ✅ Submitted (10 files)
+**Status:** ✅ Submitted (9 files)
 
 ### Challenge Relevance Check
 
@@ -43,12 +43,12 @@ Please complete the correct exercise and resubmit.
     Expected: department, employee_count, avg_salary, max_salary
 
     - ✅ Groups by department
-    - ❌ Missing COUNT(*) for employee count
+    - ✅ Counts employees (COUNT(*))
     - ✅ Calculates average salary
     - ✅ Finds maximum salary
     - ✅ Filters departments with >2 employees (HAVING)
 
-   **Score: 4/5**
+   **Score: 5/5**
 
 📄 **employee-hierarchy.sql**
    Lines: 1
@@ -70,15 +70,6 @@ Please complete the correct exercise and resubmit.
     - ✅ Uses explicit column selection
 
    **Score: 5/5**
-
-📄 **top-earners.sql**
-   Lines: 1
-
-    - ✅ Contains 1 SELECT statement(s)
-    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
-    - ⚠️ Uses `SELECT *` - prefer explicit columns
-
-   **Score: 1/4**
 
 📄 **unassigned-resources.sql**
    Lines: 5
@@ -131,7 +122,7 @@ Please complete the correct exercise and resubmit.
 
    **Score: 2/3**
 
-### Challenge Score: 28 / 42 (66%)
+### Challenge Score: 28 / 38 (73%)
 
 
 ---
